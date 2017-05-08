@@ -66,5 +66,6 @@ fi
 echo "ro.build.characteristics=$TARGET_AAPT_CHARACTERISTICS"
 
 echo "ro.cm.device=$CM_DEVICE"
+echo "ro.colt.device=$CM_DEVICE"
 
 echo "# end build properties"
