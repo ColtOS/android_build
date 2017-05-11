@@ -721,6 +721,18 @@ else if get_stage("%(bcb_dev)s") == "3/3" then
     script.Unmount("/data")
     script.AppendExtra("endif;")
 
+    script.Print("**************************************************");
+    script.Print("_________        .__   __    ________    _________");
+    script.Print("\_   ___ \  ____ |  |_/  |_  \_____  \  /   _____/");
+    script.Print("/    \  \/ /  _ \|  |\   __\  /   |   \ \_____  \ ");
+    script.Print("\     \___(  <_> )  |_|  |   /    |    \/        )");
+    script.Print(" \______  /\____/|____/__|   \_______  /_______  )");
+    script.Print("        \/                           \/        \/ ");
+    script.Print("**************************************************");
+
+    script.Print("                by Rakesh Batra");
+    script.Print("             Have a nice experience");
+
   # Place a copy of file_contexts.bin into the OTA package which will be used
   # by the recovery program.
   if "selinux_fc" in OPTIONS.info_dict:
