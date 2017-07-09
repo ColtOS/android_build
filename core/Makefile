@@ -265,8 +265,6 @@ endif
 			TARGET_CPU_ABI2="$(TARGET_CPU_ABI2)" \
 			TARGET_AAPT_CHARACTERISTICS="$(TARGET_AAPT_CHARACTERISTICS)" \
 			TARGET_UNIFIED_DEVICE="$(TARGET_UNIFIED_DEVICE)" \
-			TARGET_SKIP_DEFAULT_LOCALE="$(TARGET_SKIP_DEFAULT_LOCALE)" \
-			TARGET_SKIP_PRODUCT_DEVICE="$(TARGET_SKIP_PRODUCT_DEVICE)" \
 			$(PRODUCT_BUILD_PROP_OVERRIDES) \
 	        bash $(BUILDINFO_SH) >> $@
 	$(hide) $(foreach file,$(system_prop_file), \
@@ -999,10 +997,6 @@ ifeq (,$(filter true, $(BOARD_USES_FULL_RECOVERY_IMAGE) $(BOARD_USES_RECOVERY_AS
 RECOVERY_RESOURCE_ZIP := $(TARGET_OUT)/etc/recovery-resource.dat
 else
 RECOVERY_RESOURCE_ZIP :=
-endif
-
-ifeq ($(TARGET_PRIVATE_RES_DIRS),)
-  $(info No private recovery resources for TARGET_DEVICE $(TARGET_DEVICE))
 endif
 
 ifeq ($(recovery_fstab),)
