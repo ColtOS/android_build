@@ -714,16 +714,16 @@ else if get_stage("%(bcb_dev)s") == "3/3" then
     script.AppendExtra("endif;")
 
     script.Print("**************************************************");
-    script.Print("_________        .__   __    ________    _________");
-    script.Print("\_   ___ \  ____ |  |_/  |_  \_____  \  /   _____/");
-    script.Print("/    \  \/ /  _ \|  |\   __\  /   |   \ \_____  \ ");
-    script.Print("\     \___(  <_> )  |_|  |   /    |    \/        )");
-    script.Print(" \______  /\____/|____/__|   \_______  /_______  )");
-    script.Print("        \/                           \/        \/ ");
+    script.Print("* e88~-_           888   d8     ,88~-_   ,d88~~\ *");
+    script.Print("*d888   \  e88~-_  888 _d88__  d888   \  8888    *");
+    script.Print("*8888     d888   i 888  888   88888    | `Y88b   *");
+    script.Print("*8888     8888   | 888  888   88888    |  `Y88b, *");
+    script.Print("*Y888   / Y888   ' 888  888    Y888   /     8888 *");
+    script.Print("* '88_-~   '88_-~  888  '88_/   `88_-~   \__88P' *");
     script.Print("**************************************************");
 
     script.Print("                by Rakesh Batra");
-    script.Print("             Have a nice experience");
+    script.Print("             More Than A Custom ROM");
 
   # Place a copy of file_contexts.bin into the OTA package which will be used
   # by the recovery program.
